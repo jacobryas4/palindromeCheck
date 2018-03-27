@@ -1,0 +1,33 @@
+/* 
+    Document   : style
+    Created on : Nov 3, 2014, 2:34:22 PM
+    Author     : Louie Zhu
+    Description: Define styles
+*/
+
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 90%;
+    margin: 10px 20px 0px 95px;
+    text-align: center;
+    /*padding-left: 10px;*/
+}
+
+table {
+    border: 1px #000 solid;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color:#F4F4F4;
+    margin: 0 auto;
+}
+
+th {
+    font-weight: bold;
+    text-align:  left;
+}
+
+th, td {
+    padding: 2px;
+    font-size:80%;
+	text-align: left;
+}
