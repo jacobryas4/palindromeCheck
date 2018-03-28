@@ -29,15 +29,24 @@ if ($string != "") {
  * BUILT-IN FUNCTION ARE NOT ACCEPTABLE.
  */
 function is_palindrome($str) {
-    //put your code here
+    //establish variables for letter placement
+    $start = 0;
+    $end = strlen($str) - 1;
 
-    // create Array of letters
-    $letterArr = explode("", $str);
+    // variable to hold boolean to modify if letters don't match
+    $palindrome = true;
 
-    // create new array that loops through letterArr back to front
-    // and appends to new array
-
-    // join reversed array and compare to $str
+    // loop through string and compare letters
+    for ($i = 0; $i <= strlen($str) - 1; $i++) {
+        if($str[$start] === $str[$end]) {
+            $start++;
+            $end--;
+        } else {
+            $palindrome = false;
+        }
+    }
+    return $palindrome;
+    
 }
 ?>
 <!DOCTYPE html>
